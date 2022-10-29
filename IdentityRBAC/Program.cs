@@ -42,7 +42,7 @@ builder.Services.AddSwaggerGen(options => {
 
 // Identity¿ò¼Ü
 builder.Services.AddDbContext<IdentityDb>(opt => {
-    var connectionString = @"Server=192.168.2.252;database=rbactest;uid=root;pwd=1q2wazsx;";
+    var connectionString = @"Server=192.168.66.139;database=rbactest;Uid=cbuser;Pwd=cbpass;";
     var serverVersion = new MySqlServerVersion(new Version(8, 0, 27));
     opt.UseMySql(connectionString, serverVersion);
 });
